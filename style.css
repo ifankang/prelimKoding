@@ -1,0 +1,54 @@
+.hero {
+    min-height: 95vh; /* Tinggi minimum 95% dari tinggi layar browser */
+
+    display: flex; /* Mengaktifkan Flexbox untuk mengatur posisi elemen di dalam hero */
+
+    flex-direction: column; /* Menyusun elemen dari atas ke bawah (vertikal) */
+
+    justify-content: center; /* Memposisikan elemen ke tengah secara vertikal */
+
+    align-items: center; /* Memposisikan elemen ke tengah secara horizontal */
+
+    background: linear-gradient(
+        to bottom, /* Arah gradasi dari atas ke bawah */
+        blue,      /* Warna awal gradasi */
+        cyan       /* Warna akhir gradasi */
+    );
+
+    color: white; /* Mengubah warna teks menjadi putih */
+}
+
+.project-card {
+    transition: 0.3s; /* Membuat perubahan efek (hover, transform, dll) berjalan selama 0.3 detik */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Saat mouse berada di atas card, card naik 10px */
+}
+
+.custom-btn {
+    padding: 12px 30px;
+    /* 
+       Padding = ruang di dalam elemen
+       12px = atas & bawah
+       30px = kiri & kanan
+       Membuat tombol terlihat lebih besar
+    */
+	 background-color: var(--primary-color); /* contoh penggunaan variable*/
+}
+
+:root {
+    --primary-color: green;
+    /*
+       CSS Variable (Custom Property)
+
+       --primary-color adalah variabel yang menyimpan nilai warna merah.
+       Bisa digunakan di mana saja dengan:
+
+       color: var(--primary-color);
+
+       Keuntungan:
+       - Mudah mengganti warna tema website
+       - Cukup ubah di satu tempat saja
+    */
+}
