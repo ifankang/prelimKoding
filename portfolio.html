@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+
+      <!--
+navbar           = komponen navbar Bootstrap
+navbar-expand-lg = navbar melebar di layar besar
+bg-white         = background putih
+shadow-sm        = bayangan kecil
+-->
+      <div class="container">
+        <!-- container = membatasi lebar konten -->
+        <a class="navbar-brand fw-bold">
+          <!--
+        navbar-brand = nama/logo website
+        fw-bold      = teks tebal
+        -->
+          Bootstrap Portfolio
+
+        </a>
+      </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+      <div class="container text-center">
+        <!--
+    container   = membatasi lebar konten
+    text-center = teks rata tengah
+    -->
+        <img src="https://picsum.photos/200" class="rounded-circle mb-4">
+        <!--
+    rounded-circle = gambar lingkaran
+    mb-4           = margin bawah -->
+        <h1 class="display-4 fw-bold">
+          <!--display-4 = heading besar
+        fw-bold   = teks tebal -->
+
+          Hi, I'm Ifan
+        </h1>
+
+        <p class="lead">
+
+          <!-- lead = paragraf lebih menonjol -->
+          Web Developer
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="container py-5">
+
+      <!--
+container = membatasi lebar konten
+py-5      = padding atas bawah besar-->
+      <h2 class="section-title">
+        Skill
+      </h2>
+
+
+      <div class="mb-4">
+
+        <!-- mb-4 = margin bawah -->
+
+        <div class="d-flex justify-content-between">
+          <!--
+        d-flex                 = aktifkan flexbox
+        justify-content-between = isi kiri & kanan berjauhan-->
+
+          <span>HTML</span>
+          <span>80%</span>
+
+        </div>
+
+        <div class="progress">
+
+          <!-- progress = progress bar container -->
+
+          <div class="progress-bar bg-success" style="width:80%">
+
+            <!--
+        progress-bar = isi progress
+        bg-success   = warna hijau-->
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mb-4">
+        <div class="d-flex justify-content-between"> <span>CSS</span> <span>60%</span> </div>
+        <div class="progress">
+          <div class="progress-bar bg-primary" style="width:60%"> </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="d-flex justify-content-between"> <span>CSS</span> <span>30%</span> </div>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width:30%"> </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="container py-5">
+
+      <h2 class="section-title">
+
+        My Projects
+
+      </h2>
+
+      <div class="row g-4">
+        <!--
+    row = baris grid Bootstrap
+    g-4 = jarak antar kolom
+    -->
+
+        <div class="col-md-4">
+          <!--
+        col-md-4 = 4 kolom dari total 12
+                   tampil 3 card per baris
+        -->
+
+          <div class="custom-card p-3 d-flex flex-column">
+            <!--
+            p-3          = padding semua sisi
+            d-flex       = aktifkan flexbox
+            flex-column  = susun vertikal
+            -->
+
+            <img src="https://picsum.photos/300/200" class="rounded mb-3">
+            <!--
+            rounded = sudut membulat
+            mb-3    = margin bawah
+            -->
+
+            <span class="badge bg-success">
+              <!--
+                badge      = label kecil
+                bg-success = hijau
+                -->
+              Completed
+            </span>
+            <h5 class="mt-3">
+              <!-- mt-3 = margin atas -->
+              Discount Calculator
+            </h5>
+
+            <p class="muted">
+              Calculate discounts automatically.
+            </p>
+            <button class="btn btn-primary mt-auto" onclick="showProject('Discount Calculator')">
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card p-3 d-flex flex-column"> <img src="https://picsum.photos/300/200" class="rounded mb-3"> <span class="badge bg-primary"> Learning </span>
+            <h5 class="mt-3"> Portfolio Website </h5>
+            <p class="muted"> Personal website project. </p> <button class="btn btn-primary mt-auto" onclick="showProject('Personal website')">
+              View Project
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="custom-card p-3 d-flex flex-column"> <img src="https://picsum.photos/300/200" class="rounded mb-3"> <span class="badge bg-primary"> Learning </span>
+            <h5 class="mt-3"> Portfolio Website 2 </h5>
+            <p class="muted"> Personal website project. </p> <button class="btn btn-primary mt-auto" onclick="showProject('Personal website project')">
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script>
+    function showProject(projectName) {
+
+      alert(
+        "Project: " + projectName
+      );
+
+    }
+    </script>
+  </body>
+
+  <footer class="text-center py-4">
+    <!--
+text-center = teks rata tengah
+py-4        = padding atas bawah
+-->
+    <p class="muted">
+
+      © 2026 Code Explorer
+
+    </p>
+
+  </footer>
+
+
+</html>

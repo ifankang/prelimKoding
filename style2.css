@@ -1,0 +1,179 @@
+:root {
+
+  /* ===== COLORS ===== */
+
+  --color-primary: #2563eb;         /* Warna utama website */
+  --color-primary-hover: #1d4ed8;   /* Warna saat mouse hover */
+
+  --color-success: #22c55e;         /* Warna sukses / selesai */
+  --color-warning: #f59e0b;         /* Warna peringatan */
+  --color-danger: #ef4444;          /* Warna error / bahaya */
+
+  /* ===== SURFACES ===== */
+
+  --color-bg: #f8fafc;              /* Warna background halaman */
+  --color-surface: #ffffff;         /* Warna card atau panel */
+
+  /* ===== TEXT ===== */
+
+  --color-text: #0f172a;            /* Warna teks utama */
+  --color-text-muted: #64748b;      /* Warna teks sekunder */
+
+  /* ===== BORDERS ===== */
+
+  --color-border: #e2e8f0;          /* Warna garis border */
+
+  /* ===== RADIUS ===== */
+
+  --radius-sm: 8px;                 /* Sudut kecil */
+  --radius-md: 12px;                /* Sudut sedang */
+  --radius-lg: 20px;                /* Sudut besar */
+
+  /* ===== SHADOW ===== */
+
+  --shadow-sm:
+    0 2px 8px rgba(0,0,0,.08);      /* Bayangan ringan */
+
+  --shadow-md:
+    0 8px 20px rgba(0,0,0,.12);     /* Bayangan lebih kuat */
+
+  /* ===== SPACING ===== */
+
+  --space-1: 8px;                   /* Jarak kecil */
+  --space-2: 16px;                  /* Jarak sedang */
+  --space-3: 24px;                  /* Jarak besar */
+  --space-4: 32px;                  /* Jarak ekstra */
+
+  /* ===== TYPOGRAPHY ===== */
+
+  --font-family:
+    Inter,
+    Arial,
+    sans-serif;                     /* Font utama website */
+
+  --text-xs: 12px;                  /* Teks sangat kecil */
+  --text-sm: 14px;                  /* Teks kecil */
+  --text-md: 16px;                  /* Ukuran teks normal */
+  --text-lg: 20px;                  /* Teks besar */
+  --text-xl: 32px;                  /* Judul section */
+  --text-2xl: 48px;                 /* Judul utama */
+}
+
+/* ===== BODY ===== */
+
+body {
+
+    background: var(--color-bg);
+    /* Gunakan warna background dari design system */
+
+    color: var(--color-text);
+    /* Gunakan warna teks utama */
+
+    font-family: var(--font-family);
+    /* Gunakan font utama */
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+
+    min-height: 95vh;
+    /* Tinggi minimal 95% layar */
+
+    display: flex;
+    /* Aktifkan Flexbox */
+
+    align-items: center;
+    /* Konten di tengah secara vertikal */
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--color-primary),
+        #06b6d4
+    );
+    /* Background gradasi biru */
+
+    color: white;
+    /* Warna teks putih */
+}
+
+/* ===== CARD ===== */
+
+.custom-card {
+
+    background: var(--color-surface);
+    /* Warna card */
+
+    border: 1px solid var(--color-border);
+    /* Garis tipis di sekeliling card */
+
+    border-radius: var(--radius-lg);
+    /* Sudut card membulat */
+
+    box-shadow: var(--shadow-sm);
+    /* Bayangan ringan */
+
+    transition: .3s;
+    /* Animasi halus */
+}
+
+.custom-card:hover {
+
+    transform: translateY(-6px);
+    /* Card naik saat disentuh mouse */
+
+    box-shadow: var(--shadow-md);
+    /* Bayangan lebih kuat saat hover */
+}
+
+/* ===== BUTTON ===== */
+
+.custom-btn {
+
+    background: var(--color-primary);
+    /* Warna tombol utama */
+
+    color: white;
+    /* Teks putih */
+
+    border: none;
+    /* Hilangkan border default */
+
+    padding:
+        12px 24px;
+    /* Ruang dalam tombol */
+
+    border-radius:
+        var(--radius-md);
+    /* Sudut tombol membulat */
+}
+
+.custom-btn:hover {
+
+    background:
+        var(--color-primary-hover);
+    /* Warna tombol saat hover */
+}
+
+/* ===== SECTION TITLE ===== */
+
+.section-title {
+
+    font-size:
+        var(--text-xl);
+    /* Ukuran judul section */
+
+    margin-bottom:
+        var(--space-3);
+    /* Jarak bawah judul */
+}
+
+/* ===== MUTED TEXT ===== */
+
+.muted {
+
+    color:
+        var(--color-text-muted);
+    /* Warna teks sekunder */
+}
