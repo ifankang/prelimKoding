@@ -37,13 +37,6 @@
   --shadow-md:
     0 8px 20px rgba(0,0,0,.12);     /* Bayangan lebih kuat */
 
-  /* ===== SPACING ===== */
-
-  --space-1: 8px;                   /* Jarak kecil */
-  --space-2: 16px;                  /* Jarak sedang */
-  --space-3: 24px;                  /* Jarak besar */
-  --space-4: 32px;                  /* Jarak ekstra */
-
   /* ===== TYPOGRAPHY ===== */
 
   --font-family:
